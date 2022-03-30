@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Repo for hosting tutorial code associated with the [React Text to Speech - Simplified](https://www.assemblyai.com/blog/react-text-to-speech-simplified/) blog by [AssemblyAI](https://www.assemblyai.com)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
