@@ -5,10 +5,6 @@ function App() {
   const [ourText, setOurText] = useState("")
   const msg = new SpeechSynthesisUtterance()
 
-  const onChangeHandler = (e) => {
-    setOurText(e.target.value)
-  }
-
   const speechHandler = (msg) => {
     msg.text = ourText
     window.speechSynthesis.speak(msg)
@@ -21,7 +17,7 @@ function App() {
         type='text'
         value={ourText}
         placeholder='Enter Text'
-        onChange={onChangeHandler}
+        onChange={(e) => setOurText(e.target.value)}
       />
       <button onClick={() => speechHandler(msg)}>SPEAK</button>
     </div>
